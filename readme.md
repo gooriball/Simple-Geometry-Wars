@@ -41,33 +41,51 @@ C++, SFML으로 만든 간단한 Geometry Wars.
 [English]
 ```bash
 # Clone the repository
-git clone https://github.com/gooriball/geometry-wars.git
-cd geometry-wars
+git clone https://github.com/gooriball/Simple-Geometry-Wars.git
+cd Simple-Geometry-Wars
 
 # Create a build directory
-mkdir build && cd build
+mkdir build
+cd build
 
 # Generate build files
 cmake ..
 
 # Build the project
 cmake --build .
+
+cd Debug
+
+# Windows
+.\Geometry_Wars.exe
+
+# macOS/Linux
+./Geometry_Wars
 ```
 
 [한국어]
 ```bash
 # 저장소 복제
-git clone https://github.com/gooriball/geometry-wars.git
-cd geometry-wars
+git clone https://github.com/gooriball/Simple-Geometry-Wars.git
+cd Simple-Geometry-Wars
 
 # 빌드 디렉토리 생성
-mkdir build && cd build
+mkdir build
+cd build
 
 # 빌드 파일 생성
 cmake ..
 
 # 프로젝트 빌드
 cmake --build .
+
+cd Debug
+
+# Windows
+.\Geometry_Wars.exe
+
+# macOS/Linux
+./Geometry_Wars
 ```
 
 ## Tech Stack

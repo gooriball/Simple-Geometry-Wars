@@ -104,3 +104,10 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
 	WINDOW_WIDTH="${WINDOW_WIDTH}"
 	WINDOW_HEIGHT="${WINDOW_HEIGHT}"
 )
+
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_SOURCE_DIR}/config.json $<TARGET_FILE_DIR:${PROJECT_NAME}>
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/fonts $<TARGET_FILE_DIR:${PROJECT_NAME}>/fonts
+)
