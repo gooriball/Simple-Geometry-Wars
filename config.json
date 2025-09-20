@@ -1,0 +1,134 @@
+{
+	"window": {
+		"width": 1440,
+		"height": 900,
+		"fullscreen": false,
+		"title": "Geometry Wars",
+		"frameLimit": 60
+	},
+	"player": {
+		"pos": {
+			"relativeX": 0.5,
+			"relativeY": 0.5
+		},
+		"shapeRadius": 25,
+		"collisionRadius": 25,
+		"fillColor": {
+			"r": 5,
+			"g": 5,
+			"b": 5,
+			"a": 255
+		},
+		"outlineColor": {
+			"r": 255,
+			"g": 0,
+			"b": 0,
+			"a": 255
+		},
+		"outlineThickness": 4,
+		"vertices": 8,
+		"velocity": {
+			"x": 5,
+			"y": 5
+		}
+	},
+	"enemy": {
+		"shapeRadius": 25,
+		"collisionRadius": 25,
+		"outlineColor": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"outlineThickness": 4,
+		"verticesRange": {
+			"min": 3,
+			"max": 8
+		},
+		"speedRange": {
+			"min": 1,
+			"max": 5
+		},
+		"smallEnemyLifespan": 90,
+		"spawnInterval": 60
+	},
+	"bullet": {
+		"shapeRadius": 10,
+		"collisionRadius": 10,
+		"fillColor": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"outlineColor": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"outlineThickness": 2,
+		"speed": 10,
+		"vertices": 20,
+		"lifespan": 75
+	},
+	"ui": {
+		"scoreFont": {
+			"pos": {
+				"relativeX": 0.01,
+				"relativeY": 0.07
+			},
+			"path": "fonts/tech.ttf",
+			"size": 32,
+			"color": {
+				"r": 255,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			}
+		},
+		"highScoreFont": {
+			"pos": {
+				"relativeX": 0.01,
+				"relativeY": 0.02
+			},
+			"path": "fonts/tech.ttf",
+			"size": 32,
+			"color": {
+				"r": 255,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			}
+		},
+		"specialWeaponFont": {
+			"pos": {
+				"relativeX": 0.83,
+				"relativeY": 0.03
+			},
+			"path": "fonts/tech.ttf",
+			"size": 48,
+			"color": {
+				"r": 255,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			}
+		},
+		"pauseFont": {
+			"pos": {
+				"relativeX": 0.5,
+				"relativeY": 0.5
+			},
+			"path": "fonts/tech.ttf",
+			"size": 96,
+			"color": {
+				"r": 255,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			}
+		}
+	}
+}
