@@ -44,23 +44,12 @@ C++, SFML으로 만든 간단한 Geometry Wars.
 git clone https://github.com/gooriball/Simple-Geometry-Wars.git
 cd Simple-Geometry-Wars
 
-# Create a build directory
-mkdir build
-cd build
+# Build && Run
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 
-# Generate build files
-cmake ..
+cmake --build build --config Release --parallel
 
-# Build the project
-cmake --build .
-
-cd Debug
-
-# Windows
-.\Geometry_Wars.exe
-
-# macOS/Linux
-./Geometry_Wars
+cmake --build build --config Release --target run
 ```
 
 [한국어]
@@ -69,23 +58,12 @@ cd Debug
 git clone https://github.com/gooriball/Simple-Geometry-Wars.git
 cd Simple-Geometry-Wars
 
-# 빌드 디렉토리 생성
-mkdir build
-cd build
+# 빌드 && 실행
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 
-# 빌드 파일 생성
-cmake ..
+cmake --build build --config Release --parallel
 
-# 프로젝트 빌드
-cmake --build .
-
-cd Debug
-
-# Windows
-.\Geometry_Wars.exe
-
-# macOS/Linux
-./Geometry_Wars
+cmake --build build --config Release --target run
 ```
 
 ## Tech Stack
